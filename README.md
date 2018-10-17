@@ -1,3 +1,3 @@
 # CookBook
 CMPE 131 Proj
-Group Members: Tomas Chavez, Dat Do
+Group Members: Robin Chou, Tomas Chavez, Dat Do
