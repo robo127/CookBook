@@ -25,7 +25,7 @@ public class Cookbook
 
 		if(list.size() == 1 && list.contains("eggs"))
 		{
-			System.out.println("\n\nHard Boiled Egg");
+			System.out.println("\n\nHard Boiled Eggs");
 			System.out.println("Place your eggs in a pot and cover with 1 inch of cold water.");
 			System.out.println("Bring to a boil over medium-high heat, then cover, remove");
 			System.out.println("from the heat and set aside 8 to 10 minutes. Drain, cool in ice water and peel.");
