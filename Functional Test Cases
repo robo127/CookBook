@@ -1,0 +1,17 @@
+Write 5 functional test cases for your project.
+   Each test case should have:
+1.   Name
+2.   Purpose
+3.   Preconditions
+4.   Input parameters or manual operations
+5.   Expected results
+6.   Acceptance criteria
+
+
+Test1.
+1. Search Test
+2. Check if search algorithm is working.
+3. User must log in.
+4. Input parameters include any ingredients available. An example is Beef.
+5. The result should be a meal recipe that can be made from the ingredients. Beef can be used to make beef tacos.
+6. 99.99%
