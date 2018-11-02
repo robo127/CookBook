@@ -14,7 +14,8 @@ CMPE 131 Project
 ![Step1](./images/1.PNG)
 - Click on "new" and import recipe.sql into the database.
 ![Step2](./images/2.PNG)
-
+- Type localhost on the browser to use the website.
+![Step3](./images/3.PNG)
 
 
 ## Group Members: Robin Chou, Tomas Chavez, Dat Do, Braulio Mendoza
