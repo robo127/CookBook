@@ -11,9 +11,9 @@ CMPE 131 Project
 - Install Apache (https://httpd.apache.org/download.cgi)
 
 - After that, open web browser and type localhost/phpmyadmin to access the main database site. 
-![CookBook](./images/1.png)
+![Step1](./images/1.PNG)
 - Click on "new" and import recipe.sql into the database.
-![CookBook](./images/2.png)
+![Step2](./images/2.PNG)
 
 
 
