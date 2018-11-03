@@ -18,10 +18,18 @@
             <?php
   if(isset($_POST['submit-search'])) {
     $search = mysqli_real_escape_string($conn, $_POST['search']);
-    $sql = "SELECT * FROM recipe WHERE r_ingredients LIKE '%$search%' OR r_recipe_name LIKE '%$search%'";
+    $searchTerms = explode(" ",$search);
+    $searchCount = 0;
+    foreach($searchTerms as $search){
+	    if($searchCount > 0){
+	    	$sql .=" AND";
+	   }
+    	$sql= "SELECT * FROM recipe WHERE r_ingredients LIKE '%$search%' OR r_recipe_name LIKE '%$search%'";
+    	++$searchCount;
+    }
     $result = mysqli_query($conn, $sql);
     $queryResult = mysqli_num_rows($result);
-    
+  }
   
   if($queryResult >0){
       while($row = mysqli_fetch_assoc($result)){
@@ -38,7 +46,7 @@
       echo "There are no results matching your search!";
     }
     
-}
+
 			?>
           </div>
 </div>
