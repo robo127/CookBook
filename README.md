@@ -19,6 +19,10 @@ CMPE 131 Project
 
 
 ## Group Members: Robin Chou, Tomas Chavez, Dat Do, Braulio Mendoza
+Progress:
+Currently User Interface is complete
+Search alogirthm works for ingridient
+Working on getting it to work for multiple ingridients
 
 Github: 10/18
 
