@@ -8,7 +8,18 @@ Write 5 functional test cases for your project.
 6.   Acceptance criteria
 
 
+
 Test1
+1. Log in
+2. To ensure the log in page functions correctly
+3. User must know his/her user name and password
+4. User name and password
+5. User is able to log into CookBook website successfuly
+6. 99.99%
+
+
+
+Test2
 1. Search Test
 2. Check if search algorithm is working.
 3. User must log in.
@@ -18,21 +29,10 @@ Test1
 
 
 
-Test2
-1. Search Test
-2. Check if search algorithm is working.
-3. User must log in.
-4. Pork
-5. Pork chops
-6. 99.99%
-
-
-
-
 Test3
-1. Search Test
-2. Check if search algorithm is working.
-3. User must log in.
-4. Chicken
-5. Chicken salad
+1. Save recipes
+2. Check if recipes are saved in the user's account
+3. User must log into their account
+4. User must click on save button for any recipe they wish to store as a favorite in their account
+5. User can view their saved recipes as favorites in their account
 6. 99.99%
