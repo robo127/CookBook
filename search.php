@@ -16,26 +16,31 @@
 <div class="search">
           <div class="article-container">
             <?php
-  if(isset($_POST['submit-search'])) {
-    $search = mysqli_real_escape_string($conn, $_POST['search']);
-    $sql= "SELECT * FROM recipe WHERE r_ingredients LIKE '%$search%'";
+  if(isset($_POST["submit-search"])) {
+    $condition = '';
+    $query = explode(",", $_POST["search"]);
+//	print_r($query);
+    foreach($query as $text)
+    {
+	$condition .= "r_ingredients LIKE '%".mysqli_real_escape_string($conn, $text)."%' AND "; 
+    }
+    $condition = substr($condition,0,-4);
+    $sql= "SELECT * FROM recipe WHERE "  .$condition;
     $result = mysqli_query($conn,$sql);
-    $queryResult = mysqli_num_rows($result);
-    if($search==""){
-	$queryResult = 0;
-	} 
-
-  if($queryResult >0){
-      while($row = mysqli_fetch_assoc($result)){
-        echo"<div class ='article-box'>
+    if($query[0]==""){
+	echo "There are no results matching your search!";
+    }
+    else if(mysqli_num_rows($result)>0){
+     	while($row = mysqli_fetch_array($result)){
+	echo"<div class ='article-box'>
         <h3> ".$row['r_recipe_name']."</h3>
 	<b>Instruction: </b><p> ".$row['r_instruction']."</p>
 	<b>Ingredients: </b><p> ".$row['r_ingredients']."</p>
 	<b>Calories: </b> <p> ".$row['r_calory']."</p>			
 	</div>";
-        }
-    } 
-  else {
+	}
+    }
+    else {
       echo "There are no results matching your search!";
     }
 }    
