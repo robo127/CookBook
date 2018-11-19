@@ -27,6 +27,8 @@
     $condition = substr($condition,0,-4);
     $sql= "SELECT * FROM recipe WHERE "  .$condition;
     $result = mysqli_query($conn,$sql);
+    
+	
     if($query[0]==""){
 	echo "There are no results matching your search!";
     }
@@ -34,6 +36,9 @@
      	while($row = mysqli_fetch_array($result)){
 	echo"<div class ='article-box'>
         <h3> ".$row['r_recipe_name']."</h3>
+	<img src=".$row['r_image']." alt='' >
+	<br>
+	<br>
 	<b>Instruction: </b><p> ".$row['r_instruction']."</p>
 	<b>Ingredients: </b><p> ".$row['r_ingredients']."</p>
 	<b>Calories: </b> <p> ".$row['r_calory']."</p>			
