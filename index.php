@@ -55,10 +55,10 @@ nav a:hover {
 </div>
 <nav>
 	<ul>
-		<li><a href ="#"> Home</a></li>
-		<li><a href ="#"> About</a></li>
-		<li><a href ="#"> Contact</a></li>
-		<li><a href ="#"> Log in</a></li>
+		<li><a href ="index.php"> Home</a></li>
+		<li><a href ="About Page"> About</a></li>
+		<li><a href ="Contacts page"> Contact</a></li>
+		<li><a href ="login.php"> Log in</a></li>
 	</ul>
 </nav>
 <div class="s004">
