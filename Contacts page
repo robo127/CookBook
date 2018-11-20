@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+<style>
+h1{
+background-color: green;
+border: 3px solid black;
+}
+p{
+border-bottom: 1px solid black;
+}
+</style>
+<title>
+Contacts Page
+</title>
+</head>
+<body>
+<h1>
+Contacts
+</h1>
+<p>
+Developers
+</p>
+<ul>
+<li>
+Tommy Chavez: tommychavez12@gmail.com
+</li>
+<li>
+Braulio Mendoza: brauliom008@gmail.com
+</li>
+<li>
+Dat Do: dohdat@gmail.com
+</li>
+<li>
+Robin Chou: rbn_chou@yahoo.com
+</li>
+</ul>
+</html>
