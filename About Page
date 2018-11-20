@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head>
+<style>
+h1{
+background-color: green;
+border: 3px solid black;
+}
+</style>
+<title>
+About Page
+</title>
+</head>
+<body>
+<h1>
+About
+</h1>
+<p>
+The purpose of our Cookbook website is to provide users with recipes, cooking instructions, and calories pertaining
+to those recipes. Once logged in, users will be able to input ingredients of their choice on the website
+search page. Our website will then provide the user with multiple recipes that can be made from the inputted
+ingredients, as well as cooking instructions, and caloric count. Knowing what food to make based on what we have
+home can be time consuming. Some people may not know what to make and end up going out and buying food/groceries
+because they are unaware of what recipes they can make. Our website will help users save time and money.
+</p>
+</html>
