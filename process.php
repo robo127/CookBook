@@ -1,5 +1,6 @@
 <?php
 //get values from login.php
+$loggedin;
 	$username = $_POST ['user'];
 	$password = $_POST ['pass'];
 	
@@ -17,9 +18,14 @@
 	$result = mysql_query("select * from users where username = '$username' and password = '$password'") 
 			or die("Failed to query database" .mysql_error());
 	$row = mysql_fetch_array($result);
+	
 	if($row['username']== $username && $row['password'] == $password ) {
-			echo "Login success!!! Welcome ".$row['username'];
-	} else {
-		echo "failed to login!";
+	//echo "Login sucess!!! Welcome " .$row['username'];
+	$loggedin = true;
+	 header('location: HomePage.php');
+	}
+	else{
+	 header('location: WrongLoginIn.php');	
 	}
 	?>
+	
