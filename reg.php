@@ -32,6 +32,7 @@ if ($conn->query($sql) === TRUE) {
 }
 
 $conn->close();
+//header('location: HomePage.php');
 ?> 
 	
 	
